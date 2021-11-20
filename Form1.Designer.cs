@@ -28,27 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gamepanel = new System.Windows.Forms.Panel();
-            this.SuspendLayout();
-            // 
-            // gamepanel
-            // 
-            this.gamepanel.Location = new System.Drawing.Point(12, 18);
-            this.gamepanel.Name = "gamepanel";
-            this.gamepanel.Size = new System.Drawing.Size(1200, 600);
-            this.gamepanel.TabIndex = 0;
-            this.gamepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.gamepanel_Paint);
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1234, 637);
-            this.Controls.Add(this.gamepanel);
-            this.Name = "Form1";
-            this.Text = "Snake";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            this.ResumeLayout(false);
+         this.gamepanel = new System.Windows.Forms.Panel();
+         this.SuspendLayout();
+         // 
+         // gamepanel
+         // 
+         this.gamepanel.Location = new System.Drawing.Point(14, 21);
+         this.gamepanel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+         this.gamepanel.Name = "gamepanel";
+         this.gamepanel.Size = new System.Drawing.Size(1400, 692);
+         this.gamepanel.TabIndex = 0;
+         this.gamepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.gamepanel_Paint);
+         // 
+         // Form1
+         // 
+         this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+         this.ClientSize = new System.Drawing.Size(1440, 735);
+         this.Controls.Add(this.gamepanel);
+         this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+         this.Name = "Form1";
+         this.Text = "Snake";
+         this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+         this.ResumeLayout(false);
 
         }
 

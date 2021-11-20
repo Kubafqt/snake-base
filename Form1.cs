@@ -76,10 +76,10 @@ namespace Snake
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             Keys key = e.KeyCode;
-            if (key == Keys.W && (direction != "down" || snakeLenght == 0)) { directionKeyDown = "up"; }
-            if (key == Keys.S && (direction != "up" || snakeLenght == 0)) { directionKeyDown = "down"; }
-            if (key == Keys.A && (direction != "right" || snakeLenght == 0)) { directionKeyDown = "left"; }
-            if (key == Keys.D && (direction != "left" || snakeLenght == 0)) { directionKeyDown = "right"; }
+            if (key == Keys.W || key == Keys.Up && (direction != "down" || snakeLenght == 0)) { directionKeyDown = "up"; }
+            if (key == Keys.S || key == Keys.Down && (direction != "up" || snakeLenght == 0)) { directionKeyDown = "down"; }
+            if (key == Keys.A || key == Keys.Left && (direction != "right" || snakeLenght == 0)) { directionKeyDown = "left"; }
+            if (key == Keys.D || key == Keys.Right && (direction != "left" || snakeLenght == 0)) { directionKeyDown = "right"; }
             if (key == Keys.R) { newgame(); }
         }
 
